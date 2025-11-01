@@ -56,6 +56,61 @@ dataset.jsonl
 GRPO.ipynb
 </read_code>
 
+## Implementation
+
+### Nerdle
+
+Nerdle classic with 8 digits and 6 tries
+
+### Objective
+
+GRPO (use notebooks as reference) but we want a good interactive play
+- so given xxx first few tries (available in the context window input prompt), output the next try
+- given color feedback and patterns too
+
+Do not do SFT for now as it will be too complicated; the reasoning tokens should already be baked into Unsloth AI's GRPO implementation
+
+### Reward Modelling
+
+Nerdle colors are as follows:
+Green = correct character, in the correct position.
+Purple = correct character, in the wrong position.
+Black = incorrect character.
+
+Rewards will be given once per attempt. For each attempt of 6 digits:
+- Each green character: 3 points
+- Each purple character: 1 point
+- Each black character: 0 points
+- One invalid try: -30
+    - Invalid means that the arithmetic equation is not parseable (not even valid)
+- One correct try: +30
+    - A game ends here
+
+Make all these numbers configurable easily, set as defaults
+
+Make the rewards go down for longer number of tries so that the final reward
+```
+R=points * 1.1^(-k), where k is the number of tries
+```
+
+For the first try, k=0
+
+## Initial Guess
+
+The initial guess is always hardcoded at `6+4*-1=2`
+
+## Generating Samples
+
+500 samples (so each sample has a history of 4 tries)
+
+For now, only generate prompts where 4 tries has already been guessed.
+You should use the existing solver methods for this.
+
+### Model Size
+
+Use the smallest and best qwen, which should be Qwen3-0.6B
+
+
 ## Wordle Examples
 
 Here are some examples of RL training already on previous games wordle.
