@@ -1,0 +1,10 @@
+{"conversations": [{"role": "user", "content": "What is the capital of France?"}, {"role": "assistant", "content": "Paris"}]}
+{"conversations": [{"role": "user", "content": "What is the capital of Germany?"}, {"role": "assistant", "content": "Berlin"}]}
+{"conversations": [{"role": "user", "content": "What is the capital of Italy?"}, {"role": "assistant", "content": "Rome"}]}
+{"conversations": [{"role": "user", "content": "What is the capital of Spain?"}, {"role": "assistant", "content": "Madrid"}]}
+{"conversations": [{"role": "user", "content": "What is the capital of Portugal?"}, {"role": "assistant", "content": "Lisbon"}]}
+{"conversations": [{"role": "user", "content": "What is the capital of Greece?"}, {"role": "assistant", "content": "Athens"}]}
+{"conversations": [{"role": "user", "content": "What is the capital of Turkey?"}, {"role": "assistant", "content": "Ankara"}]}
+{"conversations": [{"role": "user", "content": "What is the capital of Egypt?"}, {"role": "assistant", "content": "Cairo"}]}
+{"conversations": [{"role": "user", "content": "What is the capital of Nigeria?"}, {"role": "assistant", "content": "Abuja"}]}
+{"conversations": [{"role": "user", "content": "What is the capital of South Africa?"}, {"role": "assistant", "content": "Pretoria"}]}
