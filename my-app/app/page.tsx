@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 
 const MAX_GUESSES = 6;
 const EQUATION_LENGTH = 8;
@@ -179,6 +180,15 @@ export default function Home() {
     <div className="min-h-screen bg-slate-950 text-slate-100">
       <div className="mx-auto flex min-h-screen w-full max-w-3xl flex-col items-center px-4 py-10 sm:px-6">
         <header className="mb-8 text-center">
+          <div className="flex items-center justify-between w-full mb-4">
+            <div></div>
+            <Link
+              href="/agent"
+              className="text-sm text-slate-400 hover:text-slate-200 underline"
+            >
+              Agent Mode →
+            </Link>
+          </div>
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">Nerdle</h1>
           <p className="mt-2 text-sm text-slate-300 sm:text-base">
             Guess the hidden equation in {MAX_GUESSES} tries. Use digits together with + - * /.
