@@ -1,0 +1,6 @@
+#use python 3.12
+unsloth
+vllm
+matplotlib
+ipywidgets
+jupyter

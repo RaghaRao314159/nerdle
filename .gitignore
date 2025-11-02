@@ -1,3 +1,8 @@
 my-app/.next
 my-app/node_modules
 my-app/next-env.d.ts
+#ignore venvs
+nerl/
+
+#unsloth stuff
+unsloth_compiled_cache/
