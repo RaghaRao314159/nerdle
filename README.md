@@ -68,8 +68,6 @@ GRPO (use notebooks as reference) but we want a good interactive play
 - so given xxx first few tries (available in the context window input prompt), output the next try
 - given color feedback and patterns too
 
-Do not do SFT for now as it will be too complicated; the reasoning tokens should already be baked into Unsloth AI's GRPO implementation
-
 ### Reward Modelling
 
 Nerdle colors are as follows:
